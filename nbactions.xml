@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>CUSTOM-0 arbol de dependencias</actionName>
+        <displayName>0 arbol de dependencias</displayName>
+        <goals>
+            <goal>dependency:tree</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-1 validate</actionName>
+        <displayName>1 validate</displayName>
+        <goals>
+            <goal>validate</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-2 compile</actionName>
+        <displayName>2 compile</displayName>
+        <goals>
+            <goal>compile</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-2.1 compiler:compile</actionName>
+        <displayName>2.1 compiler:compile</displayName>
+        <goals>
+            <goal>compiler:compile</goal>
+        </goals>
+    </action>
+    
+    <action>
+        <actionName>CUSTOM-3 test</actionName>
+        <displayName>3 test</displayName>
+        <goals>
+            <goal>test</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-4 package</actionName>
+        <displayName>4 package</displayName>
+        <goals>
+            <goal>package</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-5 verify</actionName>
+        <displayName>5 verify</displayName>
+        <goals>
+            <goal>verify</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-6 clean</actionName>
+        <displayName>6 clean</displayName>
+        <goals>
+            <goal>clean</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-7 assembly jar con dependencias</actionName>
+        <displayName>7 assembly</displayName>
+        <goals>
+            <goal>clean package assembly:single</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-97 mi clean and bluid</actionName>
+        <displayName>97 mi clean and bluid</displayName>
+        <goals>
+            <goal>clean package</goal>
+        </goals>
+    </action>
+    
+    <action>
+        <actionName>CUSTOM-98 install</actionName>
+        <displayName>98 install</displayName>
+        <goals>
+            <goal>install</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-99 deploy</actionName>
+        <displayName>99 deploy</displayName>
+        <goals>
+            <goal>deploy</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-999 Profile test assembly</actionName>
+        <displayName>999 Profile test assembly</displayName>
+        <goals>
+            <goal>clean</goal>
+            <goal>package</goal>
+            <goal>assembly:single</goal>
+        </goals>
+        <activatedProfiles>
+            <activatedProfile>test</activatedProfile>
+        </activatedProfiles>
+    </action>   
+        
+</actions>
