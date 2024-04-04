@@ -1,0 +1,22 @@
+> Para crear la llave. Ir a git bash
+ssh-keygen -t rsa -b 4096 -C "davidsanz87@gmail.com"
+>Crea la llave en C:\Users\PcCom\.ssh
+
+>Comprobar que se está ejecutando el agente de ssh. Para ello en git bash
+eval $(ssh-agent -s)
+>Tiene que devolver el pid del proceso, algo así como Agent pid 18164
+
+>Lo siguiente es agregar la llave a ese servidor
+>Para ver el directorio raiz en git bas escribir ~
+ssh-add ~/.ssh/id_rsa
+
+>Cambiar  la rama master a main 
+git branch -m main
+
+>Añadir tu proyecto en local al server en remoto
+git remote add origin "https://github.com/DavidSanzGregorio/PruebasConMaven.git"
+
+>Cuando hay un primer pull para traerte el repositorio y no te deja hacer merge
+git pull origin main --allow-unrelated-histories
+
+>Para hacerlo con NetBeans hay que usar un token
